@@ -158,7 +158,7 @@ void ffree(char **);
 void *_realloc(void *, unsigned int, unsigned int);
 
 /* emmary_memory.c */
-int bfree(void **);
+int thefree(void **);
 
 /* emmary_atoi.c */
 int interactive(info_t *);
