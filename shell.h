@@ -118,7 +118,7 @@ void find_cmd(info_t *);
 void fork_cmd(info_t *);
 
 /* emmary_parser.c */
-int is_cmd(info_t *, char *);
+int shell_is_cmd(info_t *, char *);
 char *dup_chars(char *, int, int);
 char *find_path(info_t *, char *, char *);
 
@@ -158,7 +158,7 @@ void ffree(char **);
 void *_realloc(void *, unsigned int, unsigned int);
 
 /* emmary_memory.c */
-int bfree(void **);
+int thefree(void **);
 
 /* emmary_atoi.c */
 int interactive(info_t *);
