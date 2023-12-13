@@ -118,7 +118,7 @@ void find_cmd(info_t *);
 void fork_cmd(info_t *);
 
 /* emmary_parser.c */
-int is_cmd(info_t *, char *);
+int shell_is_cmd(info_t *, char *);
 char *dup_chars(char *, int, int);
 char *find_path(info_t *, char *, char *);
 
