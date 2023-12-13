@@ -182,13 +182,13 @@ int _thehelp(info_t *);
 int _thehistory(info_t *);
 int _thealias(info_t *);
 
-/*emmary_getline.c */
+/*emmary_nextline.c */
 ssize_t get_input(info_t *);
 int _getline(info_t *, char **, size_t *);
 void sigintHandler(int);
 
-/* emmary_getinfo.c */
-void clear_info(info_t *);
+/* emmay_arg_0.c */
+void reset_info(info_t *);
 void set_info(info_t *, char **);
 void free_info(info_t *, int);
 
