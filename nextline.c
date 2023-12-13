@@ -74,7 +74,7 @@ i = len = 0; /* reset position and length */
 info->cmd_buf_type = CMD_NORM;
 }
 *buf_p = p; /* pass back pointer to current command position */
-return (_strlen(p)); /* return length of current command */
+return (__strlen(p)); /* return length of current command */
 }
 *buf_p = buf; /* else not a chain, pass back buffer from _getline() */
 return (g); /* return length of buffer from _getline() */
