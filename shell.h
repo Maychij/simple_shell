@@ -111,7 +111,7 @@ typedef struct builtin
 } builtin_table;
 
 
-/* emmary_shloop.c */
+/* emmary_shell core.c */
 int hsh(info_t *, char **);
 int find_builtin(info_t *);
 void find_cmd(info_t *);
@@ -123,7 +123,7 @@ char *dup_chars(char *, int, int);
 char *find_path(info_t *, char *, char *);
 
 /* loophsh.c */
-int loophsh(char **);
+// int loophsh(char **);
 
 /* emmary_errors.c */
 void _eputs(char *);
@@ -230,6 +230,6 @@ int is_chain(info_t *, char *, size_t *);
 void check_chain(info_t *, char *, size_t *, size_t, size_t);
 int replace_alias(info_t *);
 int replace_vars(info_t *);
-int replace_string(char **, char *);
+// int replace_string(char **, char *);
 
 #endif
