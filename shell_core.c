@@ -1,7 +1,6 @@
 #include "shell.h"
-
 /**
- * hsh - main shell loop
+ * hsh - It continuously prompts the user for input,
  * @info: the parameter & return info struct
  * @av: the argument vector from main()
  *
@@ -42,7 +41,6 @@ int hsh(info_t *info, char **av)
 	}
 	return (builtin_ret);
 }
-
 /**
  * find_builtin - finds a builtin command
  * @info: the parameter & return info struct
@@ -56,19 +54,19 @@ int find_builtin(info_t *info)
 {
 	int i, built_in_ret = -1;
 	builtin_table builtintbl[] = {
-		{"exit", _myexit},
-		{"env", _myenv},
-		{"help", _myhelp},
-		{"history", _myhistory},
+		{"exit", _theexit},
+		{"env", _theenv},
+		{"help", _thehelp},
+		{"history", _thehistory},
 		{"setenv", _mysetenv},
 		{"unsetenv", _myunsetenv},
-		{"cd", _mycd},
-		{"alias", _myalias},
+		{"cd", _thecd},
+		{"alias", _thealias},
 		{NULL, NULL}
 	};
 
 	for (i = 0; builtintbl[i].type; i++)
-		if (_strcmp(info->argv[0], builtintbl[i].type) == 0)
+		if (__strcmp(info->argv[0], builtintbl[i].type) == 0)
 		{
 			info->line_count++;
 			built_in_ret = builtintbl[i].func(info);
@@ -76,7 +74,6 @@ int find_builtin(info_t *info)
 		}
 	return (built_in_ret);
 }
-
 /**
  * find_cmd - finds a command in PATH
  * @info: the parameter & return info struct
@@ -109,7 +106,7 @@ void find_cmd(info_t *info)
 	else
 	{
 		if ((interactive(info) || _getenv(info, "PATH=")
-			|| info->argv[0][0] == '/') && is_cmd(info, info->argv[0]))
+			|| info->argv[0][0] == '/') && shell_is_cmd(info, info->argv[0]))
 			fork_cmd(info);
 		else if (*(info->arg) != '\n')
 		{

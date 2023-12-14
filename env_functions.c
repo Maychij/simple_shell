@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * _theenv - Prints the current environment by iterating through and printing the environment variables stored in the info structure.
+ * _theenv - Prints the current environment by iterating through 
+ * and printing the environment variables stored in the info structure.
  * @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
  * Return: Always 0
@@ -13,7 +14,8 @@ int _theenv(info_t *info)
 }
 
 /**
- * _getenv - Retrieves the value of a specified environment variable (name) from the environment list stored in the info structure.
+ * _getenv - Retrieves the value of a specified environment 
+ * variable (name) from the environment list stored in the info structure.
  * @info: Structure containing potential arguments. Used to maintain
  * @name: env var name
  *
@@ -35,7 +37,7 @@ char *_getenv(info_t *info, const char *name)
 }
 
 /**
- * _mysetenv - : Initializes a new environment variable or modifies 
+ * _mysetenv - : Initializes a new environment variable or modifies
  * an existing one based on the provided arguments
  * @info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
@@ -54,7 +56,7 @@ int _mysetenv(info_t *info)
 }
 
 /**
- * _myunsetenv - Removes one or more environment variables. 
+ * _myunsetenv - Removes one or more environment variables.
  * @info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
  *  Return: Always 0
@@ -75,7 +77,7 @@ int _myunsetenv(info_t *info)
 }
 
 /**
- * populate_env_list - Populates the environment linked list (info->env) 
+ * populate_env_list - Populates the environment linked list (info->env)
  * @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
  * Return: Always 0

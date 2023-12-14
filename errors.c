@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- *_eputs - prints an input string
+ *_eputs - Prints a string to the standard error (stderr) by iterating through the input string and using _eputchar to print each character.
  * @str: the string to be printed
  *
  * Return: Nothing
@@ -20,7 +20,7 @@ void _eputs(char *str)
 }
 
 /**
- * _eputchar - writes the character c to stderr
+ * _eputchar -  Writes a character to stderr. It buffers characters and then writes them to stderr using the write system call when a buffer is full or when a flushing character (defined as BUF_FLUSH) is encountered.	
  * @c: The character to print
  *
  * Return: On success 1.
@@ -42,7 +42,7 @@ int _eputchar(char c)
 }
 
 /**
- * _putfd - writes the character c to given fd
+ * _putfd - :this function writes a character to a specified fd. 
  * @c: The character to print
  * @fd: The filedescriptor to write to
  *
@@ -65,7 +65,10 @@ int _putfd(char c, int fd)
 }
 
 /**
- *_putsfd - prints an input string
+ *_putsfd -  Prints a string to a specified file descriptor. 
+ *It iterates through the input string and uses _putfd to write each 
+ *character to the specified file descriptor, 
+ *counting the number of characters written.
  * @str: the string to be printed
  * @fd: the filedescriptor to write to
  *

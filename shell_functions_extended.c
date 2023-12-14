@@ -1,20 +1,19 @@
 #include "shell.h"
 
 /**
- * _myhistory - displays the history list, one command by line, preceded
- *              with line numbers, starting at 0.
+ * _thehistory -Displays the command history list,
  * @info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
  *  Return: Always 0
  */
-int _myhistory(info_t *info)
+int _thehistory(info_t *info)
 {
 	print_list(info->history);
 	return (0);
 }
 
 /**
- * unset_alias - sets alias to string
+ * unset_alias - Removes an alias based on the provided string.
  * @info: parameter struct
  * @str: the string alias
  *
@@ -37,7 +36,9 @@ int unset_alias(info_t *info, char *str)
 }
 
 /**
- * set_alias - sets alias to string
+ * set_alias - sAdds or updates an alias based on the provided string.
+ * It checks for an existing alias and updates it or adds a new alias
+ * to the alias list within the info_t structure.
  * @info: parameter struct
  * @str: the string alias
  *
@@ -58,7 +59,8 @@ int set_alias(info_t *info, char *str)
 }
 
 /**
- * print_alias - prints an alias string
+ * print_alias - Prints the content of an alias node, separating
+ * the alias name and its associated value.
  * @node: the alias node
  *
  * Return: Always 0 on success, 1 on error
@@ -81,12 +83,18 @@ int print_alias(list_t *node)
 }
 
 /**
- * _myalias - mimics the alias builtin (man alias)
+ * _thealias - mplements functionality
+ * similar to the 'alias' command in a shell.
+ * If called without arguments, it prints all the aliases.
+ * If called with arguments containing '=' (indicating an alias assignment),
+ * it sets or updates the alias. Otherwise,
+ it prints the alias matching the provided string.
+ *
  * @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
  *  Return: Always 0
  */
-int _myalias(info_t *info)
+int _thealias(info_t *info)
 {
 	int i = 0;
 	char *p = NULL;
