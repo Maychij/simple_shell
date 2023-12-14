@@ -77,7 +77,8 @@ int _thecd(info_t *info)
 }
 
 /**
- * _thehelp -: Placeholder function intended to provide help information in the shell. 
+ * _thehelp -: Placeholder function intended to 
+ *  provide help information in the shell. 
  * @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
  *  Return: Always 0

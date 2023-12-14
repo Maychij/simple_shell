@@ -42,9 +42,7 @@ int _eputchar(char c)
 }
 
 /**
- * _putfd - : Similar to _eputchar, this function writes a character to a specified file descriptor. 
- * It also buffers characters and uses the write system call to output them to the specified file descriptor 
- * when the buffer is full or when a flushing character is encountered.
+ * _putfd - :this function writes a character to a specified fd. 
  * @c: The character to print
  * @fd: The filedescriptor to write to
  *

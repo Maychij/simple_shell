@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * bfree -  takes a pointer to a pointer and frees the memory it points to, then sets the pointer to NULL. I
+ * bfree -  takes a pointer to a pointer and frees the memory 
+ * 	it points to, then sets the pointer to NULL. I
  * @ptr: the address of the pointer to free
  *
  * Return: 1 if freed, otherwise 0.
