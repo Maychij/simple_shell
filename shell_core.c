@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * hsh - It continuously prompts the user for input, 
+ * hsh - It continuously prompts the user for input,
  * @info: the parameter & return info struct
  * @av: the argument vector from main()
  *
