@@ -113,6 +113,7 @@ typedef struct builtin
 
 /* emmary_shell core.c */
 int hsh(info_t *, char **);
+void clear_info(info_t *info);
 int find_builtin(info_t *);
 void find_cmd(info_t *);
 void fork_cmd(info_t *);
