@@ -68,10 +68,11 @@ free(filename);
 if (fd == -1)
 return (0);
 if (!fstat(fd, &st))
-ifsize = st.st_size;
+fsize = st.st_size;
 if (fsize < 2)
 return (0);
-buf = malloc(sizeof(char) * (fsize + 1)
+buf = malloc(sizeof(char) * (fsize + 1))
+;
 if (!buf)
 return (0);
 rdlen = read(fd, buf, fsize);
@@ -94,6 +95,7 @@ while (info->histcount-- >= HIST_MAX)
 delete_node_at_index(&(info->history), 0);
 renumber_history(info);
 return (info->histcount);
+ ;
 }
 
 /**

@@ -36,7 +36,7 @@ if (!strs)
 return (NULL);
 for (i = 0; node; node = node->next, i++)
 {
-str = malloc(_strlen(node->str) + 1);
+str = malloc(__strlen(node->str) + 1);
 if (!str)
 {
 for (j = 0; j < i; j++)
