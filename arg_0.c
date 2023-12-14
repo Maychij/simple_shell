@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
-* reset_info - initializes info_t struct
+* clear_info - initializes info_t struct
 * @info: struct address
 */
-void reset_info(info_t *info)
+void clear_info(info_t *info)
 {
 info->arg = NULL;
 info->argv = NULL;
