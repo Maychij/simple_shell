@@ -1,7 +1,6 @@
 #include "shell.h"
-
 /**
- * hsh - It continuously prompts the user for input, processes the input, checks for built-in commands or external commands, executes them, and handles errors
+ * hsh - It continuously prompts the user for input, 
  * @info: the parameter & return info struct
  * @av: the argument vector from main()
  *
@@ -42,7 +41,6 @@ int hsh(info_t *info, char **av)
 	}
 	return (builtin_ret);
 }
-
 /**
  * find_builtin - finds a builtin command
  * @info: the parameter & return info struct
@@ -76,7 +74,6 @@ int find_builtin(info_t *info)
 		}
 	return (built_in_ret);
 }
-
 /**
  * find_cmd - finds a command in PATH
  * @info: the parameter & return info struct

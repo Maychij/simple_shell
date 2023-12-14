@@ -1,5 +1,4 @@
 #include "shell.h"
-
 /**
  **_memset - Fills a block of memory with a specified value.
  *@s: the pointer to the memory area
@@ -15,7 +14,6 @@ char *_memset(char *s, char b, unsigned int n)
 		s[i] = b;
 	return (s);
 }
-
 /**
  * ffree - Frees memory allocated for an array of strings.
  * @pp: string of strings

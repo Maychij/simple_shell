@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _thehistory -Displays the command history list, printing each command with line numbers, starting at 0.
+ * _thehistory -Displays the command history list,
  * @info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
  *  Return: Always 0
@@ -13,7 +13,7 @@ int _thehistory(info_t *info)
 }
 
 /**
- * unset_alias - Removes an alias based on the provided string. It finds and deletes the specified alias from the alias list maintained within the info_t structure.
+ * unset_alias - Removes an alias based on the provided string. 
  * @info: parameter struct
  * @str: the string alias
  *

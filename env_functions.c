@@ -54,8 +54,7 @@ int _mysetenv(info_t *info)
 }
 
 /**
- * _myunsetenv - Removes one or more environment variables based on the provided arguments. 
- * It verifies the number of arguments and unsets the specified environment variables.
+ * _myunsetenv - Removes one or more environment variables. 
  * @info: Structure containing potential arguments. Used to maintain
  *        constant function prototype.
  *  Return: Always 0
@@ -77,7 +76,6 @@ int _myunsetenv(info_t *info)
 
 /**
  * populate_env_list - Populates the environment linked list (info->env) 
- * by copying the variables from the system environment (environ) into the list.
  * @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
  * Return: Always 0
